@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+  }
+
+.container {
+  padding: 30px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#board {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 8rem;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+#restart {
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
+  border-color: black;
+  border-radius: 5px;
+  font-size: 1.5rem;
+ cursor: pointer;
+  transition: 200ms;
+}
+
+#restart:hover {
+  transform: translateY(-7px);
+}
+
+#btn1 {
+    column-gap: 40px;
+}
+
+#rand, #ai_easy, #ai_medium {
+    padding: 12px 22px;
+    color: black;
+    background-color:  rgb(13, 173, 13);
+    border-color: black;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    transition: 500ms;
+    cursor: pointer;
+    margin: 15px;
+}
+
+#p1, #p2 {
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
+  border-color: black;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  transition: 400ms;
+  cursor: pointer;
+  margin: 15px;
+}
+
+#p1:hover, #p2:hover, #ai:hover {
+  transform: translateY(-7px);
+}
